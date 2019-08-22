@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 0.875rem arial, sans-serif;
+  color: #222;
+  background: #fff;
+  display: block;
+}
+
+header {
+  height: 64px;
+  padding-top: 20px;
+}
+
+header #search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#search-section-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#search-section-left a img {
+  display: block;
+  width: 92px;
+  margin: 0 30px;
+}
+
+#search-section-left form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  width: 638px;
+  padding: 2px;
+}
+
+#search-section-left form input {
+  margin: 0 0 0 20px;
+  vertical-align: middle;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border: none;
+  font-size: 1rem;
+}
+
+#search-section-left form input:focus {
+  outline: none;
+}
+
+#search-section-left form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 8px;
+}
+
+#search-section-left form div i,
+#search-section-left form div img {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+#search-section-left form div i {
+  font-size: 18px;
+}
+
+#search-section-left form:hover {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#search-section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px;
+}
+
+#search-section-right img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#search-section-right i {
+  font-size: 1.1rem;
+  color: #555;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
