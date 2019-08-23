@@ -221,4 +221,51 @@ header #search-wrapper {
   color: #888;
   font-size: 14px;
 }
+
+main#search-results-wrapper {
+  width: 632px;
+  margin-left: 150px;
+}
+
+main#search-results-wrapper .result {
+  display: block;
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+main#search-results-wrapper .result .result-title {
+  display: block;
+  text-align: left;
+  text-overflow: ellipsis;
+  color: #1a0dab;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+main#search-results-wrapper .result .result-title:hover {
+  text-decoration: underline;
+}
+
+main#search-results-wrapper .result .result-link {
+  display: block;
+  padding-top: 1px;
+  color: #006621;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+main#search-results-wrapper .result .link-icon {
+  display: inline-block;
+}
+
+main#search-results-wrapper .result .result-summary {
+  line-height: 1.57;
+  color: #545454;
+  font-size: 14px;
+  text-align: left;
+  font-weight: normal;
+}
 /*# sourceMappingURL=main.css.map */

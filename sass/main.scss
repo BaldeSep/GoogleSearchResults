@@ -160,3 +160,66 @@ header {
     font-size: 14px;
   }
 }
+
+// Search Results
+main#search-results-wrapper {
+  width: 632px;
+  margin-left: 150px;
+
+  $title-font-size: 20px;
+  $title-font-weight: 400;
+  $title-line-height: 28px;
+
+  $link-color: rgb(0, 102, 33);
+  $link-font-size: 1rem;
+  $link-line-height: 24px;
+
+  $summary-line-height: 1.57;
+  $summary-color: #545454;
+  $summary-font-size: 14px;
+
+  .result {
+    display: block;
+    width: 100%;
+    margin-bottom: 27px;
+    .result-title {
+      display: block;
+      text-align: left;
+      text-overflow: ellipsis;
+      color: rgb(26, 13, 171);
+      font-size: $title-font-size;
+      font-weight: $title-font-weight;
+      line-height: $title-line-height;
+
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .result-link {
+      display: block;
+
+      padding-top: 1px;
+
+      color: $link-color;
+      text-decoration: none;
+
+      font-size: $link-font-size;
+      line-height: $link-line-height;
+
+      // if you hover over link the title should be underlined
+    }
+
+    .link-icon {
+      display: inline-block;
+    }
+
+    .result-summary {
+      line-height: $summary-line-height;
+      color: $summary-color;
+      font-size: $summary-font-size;
+      text-align: left;
+      font-weight: normal;
+    }
+  }
+}
