@@ -290,3 +290,33 @@ main#search-results-wrapper {
     }
   }
 }
+
+#related-searches-wrapper {
+  margin-top: 40px;
+  margin-bottom: 28px;
+  .title {
+    display: block;
+    margin-bottom: 23px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: #222;
+  }
+  ul {
+    list-style: none;
+    li {
+      a {
+        display: block;
+        padding: 3px 0px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgb(26, 13, 171);
+        line-height: 20px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
