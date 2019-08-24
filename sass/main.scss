@@ -184,7 +184,9 @@ main#search-results-wrapper {
     margin-bottom: 27px;
     .result-title {
       display: block;
+      white-space: nowrap;
       text-align: left;
+      overflow: hidden;
       text-overflow: ellipsis;
       color: rgb(26, 13, 171);
       font-size: $title-font-size;
@@ -220,6 +222,71 @@ main#search-results-wrapper {
       font-size: $summary-font-size;
       text-align: left;
       font-weight: normal;
+      $summary-date-color: #777;
+      .result-summary-date {
+        color: $summary-date-color;
+      }
+    }
+  }
+}
+
+// suggestion card
+.suggestion-card {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin: 0px -20px 0px -20px;
+
+  $suggestion-border-color: rgba(0, 0, 0, 0.1);
+
+  border: 1px solid $suggestion-border-color;
+  border-radius: 8px;
+
+  $suggestion-title-color: #222;
+  $suggestion-title-font-size: 20px;
+
+  .suggestion-title {
+    padding: 9px 16px;
+    color: $suggestion-title-color;
+    font-weight: normal;
+    font-size: $suggestion-title-font-size;
+    line-height: 1.3;
+    text-align: left;
+    border-bottom: 1px solid $suggestion-border-color;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 9px 16px;
+    border-bottom: 1px solid $suggestion-border-color;
+    color: #222;
+    .suggestion-text {
+      display: block;
+      font-weight: normal;
+      font-size: 1rem;
+      line-height: 1.57;
+    }
+    i {
+      display: block;
+      color: lighten(#222, 30%);
+    }
+  }
+}
+
+.suggestion-card-footer {
+  display: block;
+  margin: 0px -20px 27px -20px;
+  padding: 4px 16px 0px 16px;
+  a {
+    text-align: right;
+    display: block;
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    font-size: 12px;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
